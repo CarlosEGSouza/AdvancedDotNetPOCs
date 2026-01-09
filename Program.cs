@@ -12,8 +12,8 @@ namespace AdvancedDotNetPOCs
     /// 3. Task Schedulers
     /// 4. Span<T> e Memory<T>
     /// 5. Reflection
-    /// 6. Yield Challenges (Desafios Práticos)
-    /// 7. Yield Challenges - Para Você Praticar
+    /// 6. Yield Challenges - Para Você Praticar
+    /// 7. Expression Trees Challenges - Para Você Praticar
     /// 
     /// Execute este programa para ver todos os exemplos em ação.
     /// Cada arquivo pode também ser executado individualmente.
@@ -63,6 +63,7 @@ namespace AdvancedDotNetPOCs
                 "4" => "Span<T> e Memory<T>",
                 "5" => "Reflection",
                 "6" => "Yield - Seus Desafios",
+                "7" => "Expression Trees - Seus Desafios",
                 _ => null
             };
             
@@ -80,6 +81,7 @@ namespace AdvancedDotNetPOCs
                 Console.WriteLine("  dotnet run 4        - Span/Memory");
                 Console.WriteLine("  dotnet run 5        - Reflection");
                 Console.WriteLine("  dotnet run 6        - Yield - Seus Desafios");
+                Console.WriteLine("  dotnet run 7        - Expression Trees - Seus Desafios");
             }
         }
         
@@ -112,6 +114,9 @@ namespace AdvancedDotNetPOCs
                         break;
                     case "6":
                         Yield.YieldChallengesForPractice.TestarDesafios();
+                        break;
+                    case "7":
+                        ExpressionTrees.ExpressionTreesChallenges.TestarDesafios();
                         break;
                 }
                 

@@ -169,7 +169,7 @@ namespace AdvancedDotNetPOCs.ExpressionTrees
                     "<" => Expression.LessThan(property, constant),
                     ">=" => Expression.GreaterThanOrEqual(property, constant),
                     "<=" => Expression.LessThanOrEqual(property, constant),
-                    "Contains" => Expression.Call(property, typeof(string).GetMethod("Contains", new[] { typeof(string) }), constant),
+                    "Contains" => Expression.Call(property, typeof(string).GetMethod("Contains", [typeof(string)])!, constant),
                     _ => throw new NotSupportedException($"Operação {operation} não suportada")
                 };
                 
